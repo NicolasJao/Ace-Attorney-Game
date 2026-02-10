@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ace Attorney</title>
+
+  <link rel="stylesheet" type="text/css" href="css/browser_reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script>
+    var dialoguecount = 0;
+    function continuebutton() {
+      dialoguecount += 1;
+      dialogue()
+      return false;
+    }
+    function dialogue() {
+      if (dialoguecount == 1) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_disappointed.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Oh no! Maya killed someone again, and I have to defend her! She's so stupid, when will she learn?</p>";
+      } else if (dialoguecount == 2) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/maya_disappointed.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Hey! I'm right here, you know. Also, I didn't kill anyone! C'mon, Nick!</p>";
+      } else if (dialoguecount == 3) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_thinking.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Whatever you say, Maya... *she obviously killed the man...*</p>";
+      } else if (dialoguecount == 4) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/maya_disappointed.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>What did you say?</p>";
+      } else if (dialoguecount == 5) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_embarassed.jpeg' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Nothing!</p>";
+      } else if (dialoguecount == 6) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/judge_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Order in the court! Let's get started. Is the prosecution ready?</p>";
+      } else if (dialoguecount == 7) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/edgeworth_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Yes, Your Honor.</p>";
+      } else if (dialoguecount == 8) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/judge_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Is the defense ready?</p>";
+      } else if (dialoguecount == 9) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Of course, Your Honor.</p>";
+      } else if (dialoguecount == 10) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/judge_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Okay. Mr. Edgeworth, present your case.</p>";
+      } else if (dialoguecount == 11) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/edgeworth_shrugging.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>...</p>";
+      } else if (dialoguecount == 12) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/edgeworth_counter.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Your Honor, let me start by saying this: This trial is over. I already have irrefutable and conclusive evidence that Maya Fey, sitting next to Phoenix Wright over there, is the killer.</p>";
+      } else if (dialoguecount == 13) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_surprised.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Wait... what!?</p>";
+      }else if (dialoguecount == 14) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/judge_surprised.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Mr. Edgeworth! Let's at least explain the case to the audience first!</p>";
+      } else if (dialoguecount == 15) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/edgeworth_bowing.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>I will let Gumshoe explain, Your Honor.</p>";
+      } else if (dialoguecount == 16) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/gumshoe_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Yep, Maya did it.</p>";
+      } else if (dialoguecount == 17) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/gumshoe_default.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>The man's name was Sped Rerity and he was staying at the Yeet hotel. We found a note on the desk written by the victim that says, 'It was Maya Fey, Maya Fey did it, she killed me, she is sus af, arrest her immediately she sucks'</p>";
+      } else if (dialoguecount == 18) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/edgeworth_bowing.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>The handwriting was confirmed by our expert handwriting analysis team. Need I say more, Your Honor? It's over.</p>";
+      } else if (dialoguecount == 19) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_coffee.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>...</p>";
+      } else if (dialoguecount == 20) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_thinking.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>...</p>";
+      } else if (dialoguecount == 21) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_table_slam.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>*slams table*</p>";
+      } else if (dialoguecount == 22) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_objection.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Objection!</p>";
+      } else if (dialoguecount == 23) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/wright_smug.gif' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Your Honor! Edgeworth is lying! I have evidence to prove it!</p>";
+      } else if (dialoguecount == 24) {
+        document.getElementById("battlefieldbox").innerHTML = "<td><img src='images/judge_surprised.png' width='350'></td>";
+        document.getElementById("dialoguebox").innerHTML = "<p>Is that true, Mr. Wright? Well then, let us see this evidence of yours!</p>";
+      }
+      return false;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Ace Attorney</h1>
+    <table id='battlefieldbox' style='background-color: black; margin-bottom: 30px;'>
+        <td><img src='images/judge_default.png' width='350'></td>
+    </table>
+    <div id="dialoguebox">
+      <p>Welcome to a sped Ace Attorney game made by Nico J.</p>
+    </div>
+    <div id='displayBattle' style='margin-top: 30px;'>
+      <button onclick='continuebutton()' class='centrebutton'>Continue</button>
+    </div>
+  </div>
+  <audio id="music" controls loop>
+    <source src="sound/Cornered.mp3" type="audio/mpeg">
+  </audio>
+</body>
+
+</html>
